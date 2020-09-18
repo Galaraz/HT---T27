@@ -1,2 +1,2 @@
 # HT---T27
-exercicios praticados na HT 
+Fundamentos basicos em HTML CSS e Javascript na HT 
