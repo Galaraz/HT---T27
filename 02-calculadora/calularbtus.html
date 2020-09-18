@@ -1,0 +1,92 @@
+<html>
+
+<head>
+<style>
+#Principal{
+
+  width: 60%;
+  margin: 100px auto;
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 30px;
+}
+
+#botao{
+  padding: 30px;
+  width: 95%;
+  color: white;
+  border: none;
+  font-weight: 800;
+}
+#numero{
+
+padding: 20;
+}
+
+div{
+padding: 20px;
+
+}
+
+</style>
+
+</head>
+
+
+
+
+
+<body>
+
+<div id="Principal">
+    <h1> Cálculos de BTUS</h1>
+
+
+  <div id="numero">
+    <div>
+    <label>Total de Area em M² :</label>
+    </div>
+    <input type="number" id="in1" />
+    
+    
+    <div>
+    <label>Total de pessoas no Ambiente: </label>
+     </div>
+    <input type="number" id="in2" />
+    
+
+    <div>
+    <label>Total de Eletroeletronicos: </label>
+    </div>
+    
+    <input type = "number" id= "in3"/>
+   
+  
+    <div id="botao" >
+        <button onclick="somar()">Calcular</button>
+      </div>
+
+  
+  
+  
+  </div>
+
+
+          
+</div>
+</body>
+<script>
+
+  function somar() {
+    var numero1 = parseFloat(document.getElementById("in1").value);
+    var numero2 = parseFloat(document.getElementById("in2").value);
+
+    alert(numero1 + numero2);
+
+  }
+
+  
+
+</script>
+
+</html>
