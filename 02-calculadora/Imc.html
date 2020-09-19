@@ -1,0 +1,69 @@
+<html>
+
+<head>
+<style>
+#Principal{
+
+width: 40%;
+margin: 100px auto;
+text-align: center;
+background-color: whitesmoke;
+padding: 30px;
+}
+
+#botao{
+padding: 10px;
+width: 100%;
+color: white;
+border: none;
+font-weight: 800;
+}
+#Entrada{
+
+padding: 20;
+border: 1;
+font-weight: 400;
+
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<div id="Principal">
+    <h1> Calculadora IMC</h1>
+
+
+  <div id="Entrada">
+    <label>Peso :</label>
+    <input type="number" id="in1" />
+    <label>Altura :</label>
+    <input type="number" id="in2" />
+  </div>
+  
+  <div id="botao" >
+      <button onclick="IMC()">Calcular IMC</button>
+          </div>
+
+
+        
+</div>
+</body>
+<script>
+
+function IMC() {
+  var numero1 = parseFloat(document.getElementById("in1").value);
+  var numero2 = parseFloat(document.getElementById("in2").value);
+
+  alert(numero1 / (numero2*2));
+
+}
+</script>
+</html>
+
+

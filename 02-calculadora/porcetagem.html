@@ -1,0 +1,80 @@
+<html>
+
+<head>
+  <title> Porcentagem </title>
+
+  <style>
+    #Principal {
+
+      width: 40%;
+      margin: 100px auto;
+      text-align: center;
+      background-color: gainsboro;
+      padding: 20px;
+      
+    }
+
+    #botao {
+      padding: 10px;
+      width: 100%;
+      color: white;
+      border: none;
+      font-weight: 800;
+    }
+
+    #numero {
+
+      padding: 20;
+  
+  </style>
+
+
+
+
+</head>
+
+
+<body>
+
+  <div id="Principal">
+    <h1> Porcentagem</h1>
+
+
+    <div id="numero">
+      <label>Digite um numero :</label>
+      <input type="number" id="in1" />
+      <label>a porcentagem :</label>
+      <input type="number" id="in2" />
+    </div>
+
+
+    <div id="botao">
+      <button onclick="agito()">Somar</button>
+    </div>
+  </div>
+
+
+</body>
+
+
+<script>
+
+
+  function agito() {
+    var numero1 = parseFloat(document.getElementById("in1").value);
+    var numero2 = parseFloat(document.getElementById("in2").value);
+
+    porcentagem = numero2 / 100;
+    resultado = numero1 * porcentagem;
+    alert("A porcentagem é "+resultado + " muito bem!!!" );
+
+  }
+
+
+</script>
+
+
+
+
+
+</html>
