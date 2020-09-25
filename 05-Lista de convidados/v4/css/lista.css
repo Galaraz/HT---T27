@@ -1,0 +1,78 @@
+body {
+    
+    font-family: sans-serif;
+}
+img {
+
+width : 20px;
+
+}
+
+
+
+
+
+
+
+.cardEntrada {
+   
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    margin: 30px auto;
+    
+   }
+
+
+.cardSaida{
+
+
+
+
+}
+
+h1 {
+  
+    text-align: center;
+}
+
+.card-input {
+    
+   
+    width: 80%;
+    font-size: 12pt;
+    padding: 10px 0px;
+}
+
+
+
+
+.div-tabela {
+    padding: 0px 40px;
+    width: 40%;
+    float: left;
+}
+
+
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    
+    padding: 20px 0px;
+    text-align: left;
+}
+
+td img {
+    width: 20px;
+    cursor: pointer;
+}
+
+th {
+    color: gray;
+    font-weight: 300;
+}
