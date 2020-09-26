@@ -7,10 +7,6 @@
 
 
 
-
-
-class GerenciadorPedido {
-
     let tamanhoP = document.getElementById("tamanhoP");
     let tamanhoM = document.getElementById("tamanhoM");
     let tamanhoG = document.getElementById("tamanhoG");
@@ -21,7 +17,7 @@ class GerenciadorPedido {
     let lista = document.getElementById("lista");
    
 
-    salvar() {
+    function salvar() {
       
 
         if (tamanhoP.value == "") {
@@ -51,7 +47,7 @@ class GerenciadorPedido {
                 imgRemover.src = "img/delete.svg";
                 imgEditar.src = "img/editar.svg";
 
-                            ]                // imgRemover.setAttribute('onclick', "gerenciador.remover('" + divNova.id + "')")
+                 // imgRemover.setAttribute('onclick', "gerenciador.remover('" + divNova.id + "')")
                 imgRemover.setAttribute(
                     "onclick",
                     `gerenciador.remover('${divNova.id}')`
@@ -82,20 +78,20 @@ class GerenciadorPedido {
 
             input.value = "";
         };
-    
+    };
 
-    remover(id) {
+   function remover(id) {
 
         if (confirm("Tem certeza que deseja remover este convidado?"))
             document.getElementById(id).remove();
     };
 
-    editar(id) {
+  function  editar(id) {
         idEdicao = id
         document.getElementById('tamanhoP').value = document.getElementById(id).textContent
     };
 
-    precoNaTela(){
+  function  precoNaTela(){
 
         tamanhoP
         tamanhoM
@@ -107,7 +103,7 @@ class GerenciadorPedido {
     
 
 
-}
+
 
 
 
