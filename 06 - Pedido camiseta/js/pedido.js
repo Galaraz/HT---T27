@@ -108,7 +108,7 @@
 
 
 
-let gerenciador = new GerenciadorPedido(); 
+/* let gerenciador = new GerenciadorPedido();  */
 
 
 
