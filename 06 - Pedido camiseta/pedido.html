@@ -1,0 +1,78 @@
+<html>
+
+<head>
+  <title>Pedido Camiseta</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/pedido.css" />
+  <script src="js/pedido.js"></script>
+</head>
+
+<body>
+  <div class="card">
+    <h2>Calculadora Pedido de Camisetas </h2>
+
+    <div>
+        <label>Tamanho P :</label>
+      <input type="text" id="tamanhoP" placeholder="Quantidade P (R$ 10,00)" class="card-input" />
+    </div>
+
+    <div>
+        <label>Tamanho M :</label>
+      <input type="text" id="tamanhoM"" placeholder="Quantidade M (R$ 12,00)" class="card-input" />
+    </div>
+
+
+    <div>
+        <label>Tamanho G :</label>
+      <input type="text" id="tamanhoG" placeholder="Quantidade G (R$ 15,00)" class="card-input" />
+    </div>
+
+
+    <div class="acoes">
+      <button type="button" onclick="gerenciador.salvar()">
+        Salvar Pedido
+      </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Meus Pedidos</h2>
+    
+    <div id="lista"> 
+    <textarea>   </textarea>
+    </div>
+    
+    
+    <label>Forma de Pagamento:</label>
+    <br><br>
+    <div class="pagamento">
+               
+
+        <label for="cardC">Cartao de Credito</label>
+        <input type="radio" name="pg" id="cardC" />
+
+        <label for="cardD">Cartao de Debito</label>
+        <input type="radio" name="pg" id="cardD" />
+        
+        
+        <label for="bol">Boleto</label>
+        <input type="radio" name="pg" id="bol" />
+      
+       
+        <label for="din">Dinheiro</label>
+        <input type="radio" name="pg" id="din" />
+      
+      </div>
+
+
+  
+    <div class="acoes">
+        <button type="button" onclick="gerenciador.salvar()">
+          Finalizar Pagamento
+        </button>
+      </div>
+  
+  </div>
+</body>
+
+</html>
