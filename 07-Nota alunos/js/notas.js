@@ -5,10 +5,6 @@
   //  }
 //}else{} ;
 
-
-
-
-
 class GeradorAluno {
 
 constructor(){
@@ -18,10 +14,6 @@ this.qtdReprovado =0;
 
 
 }
-
-
-
-
 
     verificarSituacao() {
         let n1 = parseFloat(document.getElementById("N1"));
