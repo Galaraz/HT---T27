@@ -1,0 +1,87 @@
+<html>
+
+<head>
+  <title>Controle financeiro</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/controlefinanceiro.css" />
+  <script src="js/cotas.js"> </script>
+
+</head>
+
+<body>
+
+  <div class=" titulo">
+    <h1>Cadastro de Empresas</h1>
+    <div>
+
+
+
+
+
+
+      <form>
+
+
+
+        <div class="input-div">
+          <label for="inputNome" class="input-label">Nome:</label>
+          <input type="text" id="inputNome" />
+        </div>
+
+
+        <div class="input-div">
+          <label for="inputRS" class="input-label">Razão Social:</label>
+          <input type="text" id="inputRS" />
+        </div>
+
+        <div class="input-div">
+          <label for="inputEndereco" class="input-label">Endereço:</label>
+          <input type="text" id="inputEndereco" />
+        </div>
+
+
+
+
+        <div class="input-div">
+          <label for="inputCnpj" class="input-label">CNPJ:</label>
+          <input type="number" id="inputCnpj" />
+        </div>
+
+
+
+
+
+        <br>
+        <div class="container">
+          <div class="botoes">
+            <button type="button" onclick="estacionamentoController.salvar()">
+              Salvar
+            </button>
+            <button type="button" onclick="estacionamentoController.cancelar()">
+              Cancelar
+            </button>
+            <button type="button" onclick="estacionamentoController.calcularResultado()">
+              Pesquisar
+            </button>
+          </div>
+        </div>
+
+
+
+
+
+        <br> <br>
+
+
+
+        <div class="resultados">
+          <fieldset>
+            <legend>Resultados</legend>
+
+          </fieldset>
+        </div>
+
+      </form>
+</body>
+
+</html>
