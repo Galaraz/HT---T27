@@ -1,0 +1,89 @@
+<html>
+
+<head>
+  <title>Controle financeiro</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/controlefinanceiro.css" />
+  <script src="js/cotas.js"> </script>
+
+</head>
+
+<body>
+
+  <div class=" titulo">
+    <h1>Cadastro de Contas</h1>
+    <div>
+
+      <form>
+
+        <div class="input-div">
+          <label for="inputNome" class="input-label">Valor da conta:</label>
+          <input type="text" id="inputNome" />
+        </div>
+
+        <div>
+
+          <label for="des">Despesas</label>
+          <input type="radio" name="conta" id="des" />
+
+          <label for="rec">Receita</label>
+          <input type="radio" name="conta" id="rec" />
+        </div>
+
+
+
+        <div>
+
+          <label for="pg">Pago:</label>
+          <input type="checkbox" name="pg" value="web" id="pg" />
+
+        </div>
+
+
+        <div class="input-div">
+          <label for="inputPago" class="input-label">Codigo:</label>
+          <input type="text" id="inputMarca" />
+        </div>
+
+
+
+        <div class="input-div">
+          <label for="inputAno" class="input-label">Receptador:</label>
+          <input type="text" id="inputAno" />
+        </div>
+
+        <br>
+        <div class="container">
+          <div class="botoes">
+            <button type="button" onclick="estacionamentoController.salvar()">
+              Salvar
+            </button>
+            <button type="button" onclick="estacionamentoController.cancelar()">
+              Cancelar
+            </button>
+            <button type="button" onclick="estacionamentoController.calcularResultado()">
+              Pesquisar
+            </button>
+          </div>
+        </div>
+
+
+
+        <br> <br>
+
+
+
+        <div class="resultados">
+          <fieldset>
+            <legend>Resultados</legend>
+
+          </fieldset>
+        </div>
+
+
+
+
+      </form>
+</body>
+
+</html>
